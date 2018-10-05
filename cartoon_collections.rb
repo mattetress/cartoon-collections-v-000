@@ -8,9 +8,7 @@ end
 
 def long_planeteer_calls(calls)
   calls.each do |call|
-    if call.split("").length > 4
-      return true
-    end
+    return true if call.split("").length > 4
   end
   false
 end
